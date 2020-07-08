@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomView" customModule="Rickid" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="mP8-Ph-WpE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yff-Su-eWC" customClass="LGButton" customModule="LGButton">
+                    <rect key="frame" x="0.0" y="0.0" width="190.5" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pyy-VY-Qay"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="leftImageSrc" value="media_ic"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="libraryButton:" destination="-1" eventType="touchUpInside" id="eXu-n6-eLj"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bA-lW-yjb" customClass="LGButton" customModule="LGButton">
+                    <rect key="frame" x="190.5" y="0.0" width="190.5" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="leftImageSrc" value="shared_ic"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="showPost:" destination="-1" eventType="touchUpInside" id="nEU-sA-h8R"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0bA-lW-yjb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="J9m-ie-OSE"/>
+                <constraint firstItem="0bA-lW-yjb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LOx-CE-HM8"/>
+                <constraint firstAttribute="bottom" secondItem="0bA-lW-yjb" secondAttribute="bottom" id="Q04-WM-mxC"/>
+                <constraint firstItem="0bA-lW-yjb" firstAttribute="leading" secondItem="Yff-Su-eWC" secondAttribute="trailing" id="SFM-wf-pMT"/>
+                <constraint firstItem="0bA-lW-yjb" firstAttribute="width" secondItem="Yff-Su-eWC" secondAttribute="width" id="TjR-ki-zvj"/>
+                <constraint firstItem="Yff-Su-eWC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mRW-5E-IJ0"/>
+                <constraint firstItem="Yff-Su-eWC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qcp-wv-aQM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="113.768115942029" y="-185.49107142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="media_ic" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="shared_ic" width="21.333333969116211" height="21.333333969116211"/>
+    </resources>
+</document>
